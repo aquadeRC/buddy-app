@@ -4,21 +4,21 @@ import {Label} from "components/atoms/Label/Label";
 import {Input} from "components/atoms/Input/Input";
 import {Wrapper} from "./FormFields.styles";
 
-const FormField  = ({onChange, value, labelka, name,  id, typ ='text', ...props}) => {
+const FormField  = ({onChange, value, label, name,  id, type ='text', ...props}) => {
 
     return(
         <Wrapper>
-            <Label htmlFor={id}>{labelka}</Label>
-            <Input imie={name} id={id} typ={typ} value={value} onChange={onChange} />
+            <Label htmlFor={id}>{label}</Label>
+            <Input name={name} id={id} type={type} value={value} onChange={onChange} />
         </Wrapper>
     );
 };
 
 
 FormField.propTypes = {
-labelka: PropTypes.string.isRequired,
-    imie: PropTypes.string.isRequired,
-    typ: PropTypes.string,
+    label: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    type: PropTypes.string,
     id: PropTypes.string.isRequired,
 }
 

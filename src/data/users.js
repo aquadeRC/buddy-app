@@ -7,11 +7,11 @@ export const users = [
     {
         imie: 'Jan',
         frekwencja:'60%',
-        srednia: '2.3',
+        srednia: '4.0',
     },
     {
         imie: 'Ola',
         frekwencja:'90%',
-        srednia: '2.3',
+        srednia: '5.3',
     },
 ];
