@@ -5,13 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09804548-fbf3-4090-a7bf-6bfd7fc796b0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/DeleteButton/DeleteButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/DeleteButton/DeleteButton.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/Input/Input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/Label/Label.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecules/FormField/FormField.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecules/FormField/FormFields.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Button/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/Button/Button.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Button/Button.styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecules/UsersListItem/UsersListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/UsersListItem/UsersListItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/UsersList/UsersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/UsersList/UsersList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/UsersList/UsersList.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/UsersList/UsersList.styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,6 +37,9 @@
   "associatedIndex": 0
 }]]></component>
   <component name="ProjectId" id="38HsPhaOc0CnFG9GJj5GR9eGhv9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,6 +59,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -64,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768467812077</updated>
-      <workItem from="1768467813972" duration="6286000" />
+      <workItem from="1768467813972" duration="13422000" />
     </task>
     <servers />
   </component>
