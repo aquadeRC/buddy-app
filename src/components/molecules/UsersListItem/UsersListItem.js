@@ -14,7 +14,7 @@ const UsersListItem= ({deleteUser,  userData:{imie, frekwencja ='0%', srednia}})
                 {imie}
                 <DeleteButton onClick={() =>deleteUser(imie)}/>
             </p>
-            <p>attendance: {frekwencja}</p>
+            <p>frekwencja: {frekwencja}</p>
         </StyledInfo>
     </Wrapper>
 );
