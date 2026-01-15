@@ -6,16 +6,13 @@ import Button from "../../atoms/Button/Button";
 import {Wrapper,  StyledInfo,StyledSrednia} from "./UsersListItem.styles";
 
 
-const showIndex = (index) => alert(`To jest studend #${index+1}`);
-
-
-const UsersListItem= ({index, userData:{imie, frekwencja ='0%', srednia}}) =>(
+const UsersListItem= ({deleteUser,  userData:{imie, frekwencja ='0%', srednia}}) =>(
     <Wrapper>
         <StyledSrednia value={srednia}>{srednia}</StyledSrednia>
         <StyledInfo>
             <p>
                 {imie}
-                <Button onClick={() =>showIndex(index)}/>
+                <Button onClick={() =>deleteUser(imie)}/>
             </p>
             <p>attendance: {frekwencja}</p>
         </StyledInfo>
