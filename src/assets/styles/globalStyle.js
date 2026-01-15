@@ -12,9 +12,9 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     body{
-        font-family: montserrat, sans-serif;
+        font-family: Montserrat, sans-serif;
     }
     a, button{
-        font-family: montserrat, sans-serif;
+        font-family: Montserrat, sans-serif;
     }
 `;
