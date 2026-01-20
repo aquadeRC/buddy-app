@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import {users as userData} from 'data/users';
-import UsersList from "components/organisms/UsersList/UsersList";
-import Form from "components/organisms/Form/Form";
+import AddUser from "views/AddUser";
 import {ThemeProvider} from "styled-components";
 import {GlobalStyle} from "assets/styles/globalStyle";
 import {theme} from "assets/styles/theme";
 import {Wrapper} from "./Root.styles";
 
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Dashboard from "./Dashboard";
+import MainTemplate from "../components/templates/MainTemplate/MainTemplate";
 
 const initialFormState ={
     imie:'',
@@ -70,18 +71,14 @@ const Root = () => {
     <Router>
         <ThemeProvider theme={theme}>
             <GlobalStyle/>
+            <MainTemplate>
             <Wrapper>
-                <nav>
-                    <Link to="/">Home</Link>
-
-                    <Link to="/add-user">Dodaj uzytkownika</Link>
-                </nav>
                 <Routes>
-                    <Route path="/" element={ <UsersList deleteUser={deleteUser} usersList={usersList}/>}/>
-                    <Route path="/add-user" element={<Form formValue={formValue} handleInputChange={handleInputChange} handleAddUser={handleAddUser}/>}/>
-
+                    <Route path="/add-user" element={<AddUser formValue={formValue} handleInputChange={handleInputChange} handleAddUser={handleAddUser}/>}/>
+                    <Route path="/" element={ <Dashboard deleteUser={deleteUser} users={usersList}/>}/>
                 </Routes>
             </Wrapper>
+        </MainTemplate>
         </ThemeProvider>
     </Router>
     );
