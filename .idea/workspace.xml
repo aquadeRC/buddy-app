@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09804548-fbf3-4090-a7bf-6bfd7fc796b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/Title/Title.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/ViewWrapper/ViewWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/Nawigacja/Nawigacja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/Nawigacja/Nawigacja.styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/templates/MainTemplate/MainTemplate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/templates/MainTemplate/MainTemplate.styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Providers/UserProvider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/Form/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AddUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/UsersListItem/UsersListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/UsersListItem/UsersListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/Nawigacja/Nawigacja.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Nawigacja/Nawigacja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/Nawigacja/Nawigacja.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Nawigacja/Nawigacja.styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/UsersList/UsersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/UsersList/UsersList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/UsersList/UsersList.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/UsersList/UsersList.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/AddUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AddUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Root.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Root.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +94,8 @@
       <updated>1768467812077</updated>
       <workItem from="1768467813972" duration="13562000" />
       <workItem from="1768501677319" duration="5653000" />
-      <workItem from="1768895841053" duration="4640000" />
+      <workItem from="1768895841053" duration="20364000" />
+      <workItem from="1768942737126" duration="812000" />
     </task>
     <servers />
   </component>

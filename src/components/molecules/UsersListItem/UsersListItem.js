@@ -1,30 +1,31 @@
 
-import React from 'react';
+import React, {useContext} from 'react';
 import PropTypes from 'prop-types';
 
 import DeleteButton from "../../atoms/DeleteButton/DeleteButton";
 import {Wrapper,  StyledInfo,StyledSrednia} from "./UsersListItem.styles";
+import { UserShape } from 'types';
+import {UserContext }from "Providers/UserProvider";
 
 
-const UsersListItem= ({deleteUser,  userData:{imie, frekwencja ='0%', srednia}}) =>(
+const UsersListItem= ({ userData:{imie, frekwencja ='0%', srednia}}) => {
+    const {deleteUser} = useContext(UserContext);
+   return (
     <Wrapper>
         <StyledSrednia value={srednia}>{srednia}</StyledSrednia>
         <StyledInfo>
             <p>
                 {imie}
-                <DeleteButton onClick={() =>deleteUser(imie)}/>
+                <DeleteButton onClick={() => deleteUser(imie)}/>
             </p>
             <p>frekwencja: {frekwencja}</p>
         </StyledInfo>
     </Wrapper>
 );
+};
 
 UsersListItem.propTypes ={
-    userData: PropTypes.shape({
-        imie: PropTypes.string.isRequired,
-        frekwencja: PropTypes.string,
-        srednia: PropTypes.string,
-    }),
+    userData: PropTypes.arrayOf(PropTypes.shape(UserShape)),
 };
 
 export default UsersListItem;

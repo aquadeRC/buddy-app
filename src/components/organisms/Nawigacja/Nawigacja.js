@@ -11,10 +11,10 @@ return (
                 Buddy
             </h1>
         </Logo>
-        <StyledLink to="/">Dashboard</StyledLink>
+        <StyledLink to="/" >Dashboard</StyledLink>
         <StyledLink to="/add-user">Dodaj uzytkownika</StyledLink>
-        <StyledLink to="/">Settings</StyledLink>
-        <StyledLink to="/">Logout</StyledLink>
+        <StyledLink to="/Settings" end>Settings</StyledLink>
+        <StyledLink to="/Logout" end>Logout</StyledLink>
     </Wrapper>
 
 );
