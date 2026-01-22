@@ -32,7 +32,7 @@ const AddUser= () => {
 
     return(
             <ViewWrapper as="form" onSubmit={handleSubmitUser}>
-                <Title>Dodaj studenta</Title>
+                <Title>Dodawanie studenta</Title>
                 <FormField label="Name" name="imie" id="imie" value={formValue.imie} onChange={handleInputChange}/>
                 <FormField label="Frekwencja" name="frekwencja" id="frekwencja" value={formValue.frekwencja} onChange={handleInputChange}/>
                 <FormField label="Średnia" name="srednia" id="srednia" value={formValue.srednia} onChange={handleInputChange}/>
