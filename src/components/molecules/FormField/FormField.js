@@ -4,7 +4,7 @@ import {Label} from "components/atoms/Label/Label";
 import {Input} from "components/atoms/Input/Input";
 import {Wrapper} from "./FormFields.styles";
 
-const FormField  = ({onChange, value, label, name,  id, type ='text', ...props}) => {
+const FormField  = ({onChange, value, label, name,  id, type = 'text'}) => {
 
     return(
         <Wrapper>

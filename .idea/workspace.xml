@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09804548-fbf3-4090-a7bf-6bfd7fc796b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/FormField/FormField.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpesr/renderWithThemeProvider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/AddUser.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useWindowSize.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecules/FormField/FormField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/FormField/FormField.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/AddUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AddUser.js" afterDir="false" />
     </list>
@@ -94,7 +91,9 @@
       <workItem from="1768501677319" duration="5653000" />
       <workItem from="1768895841053" duration="20364000" />
       <workItem from="1768942737126" duration="5315000" />
-      <workItem from="1769081212702" duration="7940000" />
+      <workItem from="1769081212702" duration="8155000" />
+      <workItem from="1769151217927" duration="810000" />
+      <workItem from="1769155331223" duration="9194000" />
     </task>
     <servers />
   </component>
