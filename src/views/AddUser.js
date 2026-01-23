@@ -1,43 +1,53 @@
-import React, {useContext, useState} from 'react';
-import { UserShape } from 'types';
+import React, {useContext} from 'react';
 import FormField from "components/molecules/FormField/FormField";
 import Button from "components/atoms/Button/Button";
 import { ViewWrapper } from 'components/molecules/ViewWrapper/ViewWrapper';
 import { Title } from 'components/atoms/Title/Title';
 import  {UserContext } from "Providers/UserProvider";
+import {useForm} from "hooks/useForm";
 
 
 const initialFormState ={
     imie:'',
     frekwencja:'',
-    srednia:''
+    srednia:'',
+    potwierdz: false,
+    error: '',
 }
-
 const AddUser= () => {
-    const [formValue, setFormValues] = useState(initialFormState);
     const {handleAddUser} = useContext(UserContext);
+    const {
+        formValue,
+        handleInputChange,
+        handleClearForm,
+        handleThrowError,
+        handleConsentToggle,
+    } = useForm(initialFormState);
 
-    const handleInputChange = (e) => {
-        setFormValues({
-            ...formValue,
-            [e.target.name]: e.target.value,
-        })
-    }
-    const handleSubmitUser = (e) =>{
+
+    const handleSubmitUser = (e) => {
         e.preventDefault();
-        handleAddUser(formValue);
-
-        setFormValues(initialFormState);
+        if (formValue.potwierdz) {
+            handleAddUser(formValue);
+            handleClearForm(initialFormState);
+        } else {
+            handleThrowError('Musisz zaznaczyć potwierdzenie');
+        }
     }
 
-    return(
-            <ViewWrapper as="form" onSubmit={handleSubmitUser}>
-                <Title>Dodawanie studenta</Title>
-                <FormField label="Name" name="imie" id="imie" value={formValue.imie} onChange={handleInputChange}/>
-                <FormField label="Frekwencja" name="frekwencja" id="frekwencja" value={formValue.frekwencja} onChange={handleInputChange}/>
-                <FormField label="Średnia" name="srednia" id="srednia" value={formValue.srednia} onChange={handleInputChange}/>
-                <Button type="submit">Dodaj</Button>
-            </ViewWrapper>
+    return (
+        <ViewWrapper as="form" onSubmit={handleSubmitUser}>
+            <Title>Dodawanie studentow</Title>
+            <FormField label="Name" name="imie" id="imie" value={formValue.imie} onChange={handleInputChange}/>
+            <FormField label="Frekwencja" name="frekwencja" id="frekwencja" value={formValue.frekwencja}
+                       onChange={handleInputChange}/>
+            <FormField label="Średnia" name="srednia" id="srednia" value={formValue.srednia}
+                       onChange={handleInputChange}/>
+            <FormField label="Potwierdz" name="potwierdz" type="checkbox" id="potwierdz" value={formValue.potwierdz}
+                       onChange={handleConsentToggle}/>
+            <Button type="submit">Dodaj</Button>
+            {formValue.error ? <p>{formValue.error}</p> : null}
+        </ViewWrapper>
     );
 };
 
