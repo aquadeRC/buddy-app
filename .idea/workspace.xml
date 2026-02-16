@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09804548-fbf3-4090-a7bf-6bfd7fc796b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hooks/useForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useWindowSize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organisms/SearchBar/SearchBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organisms/SearchBar/SearchBar.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/templates/NewsSection/NewsSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/templates/NewsSection/NewsSection.styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/FormField/FormField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/FormField/FormField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/AddUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AddUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/Button/Button.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Button/Button.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/Nawigacja/Nawigacja.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Nawigacja/Nawigacja.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/MainTemplate/MainTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/MainTemplate/MainTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templates/MainTemplate/MainTemplate.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/MainTemplate/MainTemplate.styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +80,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.29346.242" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.30387.83" />
       </set>
     </attachedChunks>
   </component>
@@ -93,7 +97,10 @@
       <workItem from="1768942737126" duration="5315000" />
       <workItem from="1769081212702" duration="8155000" />
       <workItem from="1769151217927" duration="810000" />
-      <workItem from="1769155331223" duration="9194000" />
+      <workItem from="1769155331223" duration="9585000" />
+      <workItem from="1769168502500" duration="534000" />
+      <workItem from="1771235456836" duration="6415000" />
+      <workItem from="1771270062832" duration="234000" />
     </task>
     <servers />
   </component>
