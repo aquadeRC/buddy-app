@@ -50,4 +50,3 @@ export const ContentWrapper = styled.div`
         object-fit:cover;   
     }
 `;
-///koniec kurs 11 - 24:08
