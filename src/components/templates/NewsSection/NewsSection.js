@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState, useEffect} from "react";
 import {
     TitleWrapper,
     ArticleWrapper,
@@ -8,35 +8,50 @@ import {
 } from "components/templates/NewsSection/NewsSection.styles";
 import Button from "../../atoms/Button/Button";
 
+import axios from "axios";
 
-const data = [
-    {
-        tile:'Nowe komputery w szkole',
-        category:'Wiadomości techniczne',
-        content:'Ala ma kota kot ma Ale',
-        image: null,
-    },
-    {
-        tile:'Nowe komputery w szkole2',
-        category:'Wiadomości techniczne',
-        content:'Ala ma kota kot ma Ale',
-        image: 'https://unsplash.it/500/400',
-    },
-    {
-        tile:'Nowe komputery w szkole 3',
-        category:'Wiadomości techniczne',
-        content:'Ala ma kota kot ma Ale',
-        image: null,
-    }
-]
+const token = 'b651365ec3bf2ed1f4d7fb45d8f405';
 
 const NewsSection = () =>
 {
+    const [articles, setArticles] = useState([]);
+    const [error, setError] = useState('');
+
+    useEffect(() => {
+        console.log(process.env.REACT_APP_DATOCMS_TOKEN);
+        axios.post('https://graphql.datocms.com/' ,
+            {
+                query: `{
+                          allArticles {
+                            id
+                            title
+                            category
+                            content
+                            image {
+                            url  
+                            }
+                          }
+                        }`
+            },
+            {
+            headers: {
+                authorization: `Bearer ${token}`,
+            }
+
+        })
+            .then(({data: {data}})=> {
+                setArticles(data.allArticles);
+            })
+            .catch(() =>{
+                setError('Nie możemy załadować wiadomości');
+            })
+    },[]);
+
     return (
         <Wrapper>
             <NewsSectionHeader>Sekcja wiadomościz uniwersytetu</NewsSectionHeader>
-            {data.map(({title, category, content, image = null}) => (
-                <ArticleWrapper key={title}>
+            {articles.length >0  ?  articles.map(({id, title, category, content, image = null}) => (
+                <ArticleWrapper key={id}>
                     <TitleWrapper>
                         <h3>{title}</h3>
                         <p>{category}</p>
@@ -45,12 +60,11 @@ const NewsSection = () =>
                         <p>
                             {content}
                         </p>
-                        {image ? <img src={image} alt="artykol" /> : null}
+                        {image ? <img src={image.url} alt="artykol" /> : null}
                     </ContentWrapper>
                     <Button isBig>Wiecej</Button>
                 </ArticleWrapper>
-            ))}
-
+            )) : <NewsSectionHeader>{error ? error : 'Ładowanie..'}</NewsSectionHeader>}
         </Wrapper>
 
     )
