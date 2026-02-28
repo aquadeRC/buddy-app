@@ -6,13 +6,13 @@ import { Title } from 'components/atoms/Title/Title';
 import { UserShape } from 'types';
 
 
-const UsersList= ({usersList}) => {
+const UsersList= ({usersList =[]}) => {
     return(
         <>
             <Title>Lista studentów</Title>
             <StyledList>
                 {usersList.map((userData, index) => (
-                    <UsersListItem  key={userData.imie} userData={userData}/>
+                    <UsersListItem  key={userData.name} userData={userData}/>
                 ))}
             </StyledList>
         </>

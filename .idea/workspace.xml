@@ -5,15 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09804548-fbf3-4090-a7bf-6bfd7fc796b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/templates/NewsSection/NewsSection.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mocks/browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mocks/handlers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/templates/MainTemplate/MainTemplate.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/MainTemplate/MainTemplate.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Providers/UserProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/UserProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/UsersListItem/UsersListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/UsersListItem/UsersListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/Nawigacja/Nawigacja.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Nawigacja/Nawigacja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/UsersList/UsersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/UsersList/UsersList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/templates/NewsSection/NewsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/NewsSection/NewsSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/templates/NewsSection/NewsSection.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/NewsSection/NewsSection.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/AddUser.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AddUser.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Root.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Root.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +51,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.localhost:3000.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -77,6 +83,16 @@
       <recent name="D:\sandbox\React\buddy-app\src\views" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="localhost:3000" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.localhost:3000" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -105,6 +121,11 @@
       <workItem from="1771591337248" duration="111000" />
       <workItem from="1771591507095" duration="8000" />
       <workItem from="1772053259720" duration="9193000" />
+      <workItem from="1772089556322" duration="4633000" />
+      <workItem from="1772141451047" duration="4570000" />
+      <workItem from="1772183266378" duration="15122000" />
+      <workItem from="1772279146255" duration="585000" />
+      <workItem from="1772298926710" duration="404000" />
     </task>
     <servers />
   </component>

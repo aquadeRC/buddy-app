@@ -8,17 +8,17 @@ import { UserShape } from 'types';
 import {UserContext }from "Providers/UserProvider";
 
 
-const UsersListItem= ({ userData:{imie, frekwencja ='0%', srednia}}) => {
+const UsersListItem= ({ userData:{name, attendance ='0%', average}}) => {
     const {deleteUser} = useContext(UserContext);
    return (
     <Wrapper>
-        <StyledSrednia value={srednia}>{srednia}</StyledSrednia>
+        <StyledSrednia value={average}>{average}</StyledSrednia>
         <StyledInfo>
             <p>
-                {imie}
-                <DeleteButton onClick={() => deleteUser(imie)}/>
+                {name}
+                <DeleteButton onClick={() => deleteUser(name)}/>
             </p>
-            <p>frekwencja: {frekwencja}</p>
+            <p>frekwencja: {attendance}</p>
         </StyledInfo>
     </Wrapper>
 );

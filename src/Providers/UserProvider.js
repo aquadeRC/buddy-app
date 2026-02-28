@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {users as userData} from "../data/users";
+import axios from 'axios';
 
 export const UserContext = React.createContext(
     {
@@ -9,39 +9,27 @@ export const UserContext = React.createContext(
     }
 );
 
-const mockApi =(succes) =>{
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            if(userData){
-                resolve([...userData]);
-            } else {
-                reject({message:'Error'});
-            }
-        }, 2000);
-    });
-}
-
 const UserProvider = ({ children }) => {
     const [usersList, setUsersList] = useState([]);
 
     useEffect(() =>{
-        mockApi(true)
-            .then((data)=>{
-                setUsersList(data)
-            });
-        return () => {}
-    },[])
+         axios
+            .get('/students')
+            .then(data => setUsersList(data.data))
+            .catch(err => console.log("error in userProvider response " + err));
+    })
 
     const deleteUser =(name)=>{
-        const filteredUsers = usersList.filter(user => user.imie !== name);
+        const filteredUsers = usersList.filter(user => user.name !== name);
         setUsersList(filteredUsers);
     }
 
     const handleAddUser = (values) => {
         const newUser ={
-            imie: values.imie,
-            frekwencja: values.frekwencja,
-            srednia: values.srednia,
+            name: values.name,
+            attendance: values.attendance,
+            average: values.average
+            ,
         }
         setUsersList( [...usersList, newUser]);
     }

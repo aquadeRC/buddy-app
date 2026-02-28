@@ -18,7 +18,6 @@ const NewsSection = () =>
     const [error, setError] = useState('');
 
     useEffect(() => {
-        console.log(process.env.REACT_APP_DATOCMS_TOKEN);
         axios.post('https://graphql.datocms.com/' ,
             {
                 query: `{
