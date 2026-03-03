@@ -1,16 +1,21 @@
 import React  from "react";
 import { screen, fireEvent} from '@testing-library/react';
 import '@testing-library/jest-dom/'
-
+import {render} from "../tests-utils";
 import AddUser from "./AddUser";
-import {RenderWithThemeProviders} from "helpesr/renderWithThemeProvider";
+
 import Dashboard from "./Dashboard";
 
 
-
 describe('Add user', () => {
+
+    beforeAll(async () => {
+        global.TextEncoder = require('util').TextEncoder;
+        global.TextDecoder = require('util').TextDecoder;
+    });
+
     it("Nie dodaje nowego uzytkownika do listy jesli potwierdzenie nie jest zaznaczone", () => {
-        RenderWithThemeProviders(
+        render(
             <>
                 <AddUser />
                 <Dashboard/>

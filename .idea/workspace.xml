@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09804548-fbf3-4090-a7bf-6bfd7fc796b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mocks/browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mocks/handlers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organisms/SearchBar/SearchBar.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useStudents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Dashboard.styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Providers/UserProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/UserProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/UsersListItem/UsersListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/UsersListItem/UsersListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/FormField/FormField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/FormField/FormField.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/Nawigacja/Nawigacja.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Nawigacja/Nawigacja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/SearchBar/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/SearchBar/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/SearchBar/SearchBar.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/SearchBar/SearchBar.styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/UsersList/UsersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/UsersList/UsersList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/templates/NewsSection/NewsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/templates/NewsSection/NewsSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mocks/handlers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mocks/handlers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/AddUser.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AddUser.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Root.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Root.js" afterDir="false" />
     </list>
@@ -125,7 +129,9 @@
       <workItem from="1772141451047" duration="4570000" />
       <workItem from="1772183266378" duration="15122000" />
       <workItem from="1772279146255" duration="585000" />
-      <workItem from="1772298926710" duration="404000" />
+      <workItem from="1772298926710" duration="9767000" />
+      <workItem from="1772316330480" duration="5287000" />
+      <workItem from="1772523457998" duration="5533000" />
     </task>
     <servers />
   </component>

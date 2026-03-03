@@ -1,42 +1,42 @@
 import React,{useEffect, useState} from 'react';
-import { ViewWrapper } from 'components/molecules/ViewWrapper/ViewWrapper';
-import {Link, useParams} from "react-router-dom";
-import UsersList from 'components/organisms/UsersList/UsersList';
-import axios from "axios";
 
+import {useParams, Navigate, Link} from "react-router"
+import { useStudents } from 'hooks/useStudents';
+import { Title } from 'components/atoms/Title/Title';
+import { GroupWrapper, TitleWrapper, Wrapper } from 'views/Dashboard.styles';
+import UsersList from "components/organisms/UsersList/UsersList";
 
 
 const Dashboard = () => {
-    const [students,setStudents] = useState([]);
-    const [groups,setGroups] = useState([]);
-    const {id} = useParams();
+    const [groups, setGroups] = useState([]);
+    const { getGroups } = useStudents();
+    const { id } = useParams();
 
     useEffect(() => {
-        axios.get('/groups')
-            .then(({data}) => {setGroups(data.groups); console.log("Groups", data.groups)})
-            .catch((err) => console.log(err));
+        (async () => {
+            const groups = await getGroups();
+            setGroups(groups);
+        })();
+    }, [getGroups]);
 
-    },[])
-
-
-    useEffect(() => {
-        console.log("ID:", id, groups[0]);
-        axios.get(`/students/${id ||  groups[0]}`)
-            .then(({data}) => {setStudents(data.students); console.log("Students", data.students)})
-            .catch(error => console.log(error));
-        },[id, groups])
-
-
+    if (!id && groups.length > 0) return <Navigate to={`/group/${groups[0]}`} />;
 
     return (
-        <ViewWrapper>
-            <nav >
-                {groups.map(group => (
-                    <Link  key={group} to={`/group/${group}`}>{group}</Link>
-                ))}
-            </nav>
-            <UsersList usersList={students} />
-        </ViewWrapper>
+        <Wrapper>
+            <TitleWrapper>
+                <Title as="h2">Group {id}</Title>
+                <nav>
+                    {groups.map((group) => (
+                        <Link key={group} to={`/group/${group}`}>
+                            {group}{' '}
+                        </Link>
+                    ))}
+                </nav>
+            </TitleWrapper>
+            <GroupWrapper>
+                <UsersList/>
+            </GroupWrapper>
+        </Wrapper>
     );
 };
 
